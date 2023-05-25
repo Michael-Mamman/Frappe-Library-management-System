@@ -1,0 +1,55 @@
+2023-05-16 09:49:49,249 DEBUG cd frappe-bench && python3 -m venv env
+2023-05-16 09:50:01,512 DEBUG cd frappe-bench && /home/mukiala/Desktop/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade pip
+2023-05-16 09:50:10,375 DEBUG cd frappe-bench && /home/mukiala/Desktop/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet wheel
+2023-05-16 09:50:18,823 LOG Getting frappe
+2023-05-16 09:50:18,824 DEBUG cd frappe-bench/apps && git clone https://github.com/frappe/frappe.git --branch version-14 --depth 1 --origin upstream
+2023-05-16 09:51:32,465 LOG Installing frappe
+2023-05-16 09:51:32,467 DEBUG cd /home/mukiala/Desktop/frappe-bench/frappe-bench && /home/mukiala/Desktop/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mukiala/Desktop/frappe-bench/frappe-bench/apps/frappe 
+2023-05-16 09:55:18,612 DEBUG cd /home/mukiala/Desktop/frappe-bench/frappe-bench/apps/frappe && yarn install
+2023-05-16 09:57:33,404 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-05-16 09:57:33,405 DEBUG cd frappe-bench && bench build
+2023-05-16 09:57:33,685 INFO /home/mukiala/.local/bin/bench build
+2023-05-16 09:58:23,006 LOG setting up backups
+2023-05-16 09:58:23,134 LOG backups were set up
+2023-05-16 09:58:23,135 INFO Bench frappe-bench initialized
+2023-05-16 10:05:43,408 INFO /home/mukiala/.local/bin/bench start
+2023-05-16 10:05:44,905 INFO /home/mukiala/.local/bin/bench schedule
+2023-05-16 10:05:44,919 INFO /home/mukiala/.local/bin/bench worker
+2023-05-16 10:05:45,135 INFO /home/mukiala/.local/bin/bench serve --port 8004
+2023-05-16 10:05:45,150 INFO /home/mukiala/.local/bin/bench watch
+2023-05-16 10:06:57,138 INFO /home/mukiala/.local/bin/bench find
+2023-05-16 10:07:42,275 INFO /home/mukiala/.local/bin/bench new-app library_management
+2023-05-16 10:07:42,287 LOG creating new app library_management
+2023-05-16 10:08:42,327 LOG Installing library_management
+2023-05-16 10:08:42,330 DEBUG cd /home/mukiala/Desktop/frappe-bench/frappe-bench && /home/mukiala/Desktop/frappe-bench/frappe-bench/env/bin/python -m pip install --quiet --upgrade -e /home/mukiala/Desktop/frappe-bench/frappe-bench/apps/library_management 
+2023-05-16 10:08:47,066 DEBUG bench build --app library_management
+2023-05-16 10:08:47,319 INFO /home/mukiala/.local/bin/bench build --app library_management
+2023-05-16 10:08:57,010 WARNING restart failed: Couldn't find supervisorctl in PATH
+2023-05-16 10:16:00,021 INFO /home/mukiala/.local/bin/bench new-site library.test
+2023-05-16 10:16:12,216 INFO /home/mukiala/.local/bin/bench new-site library.test
+2023-05-16 10:16:42,184 INFO /home/mukiala/.local/bin/bench new-site library.test
+2023-05-16 10:17:13,592 INFO /home/mukiala/.local/bin/bench new-site library.demo
+2023-05-16 10:23:31,551 INFO /home/mukiala/.local/bin/bench --site library.demo add-to-hosts
+2023-05-16 10:23:46,699 INFO /home/mukiala/.local/bin/bench start
+2023-05-16 10:23:47,648 INFO /home/mukiala/.local/bin/bench watch
+2023-05-16 10:23:47,829 INFO /home/mukiala/.local/bin/bench serve --port 8004
+2023-05-16 10:23:47,854 INFO /home/mukiala/.local/bin/bench schedule
+2023-05-16 10:23:47,911 INFO /home/mukiala/.local/bin/bench worker
+2023-05-16 10:25:19,132 INFO /home/mukiala/.local/bin/bench --site library.demo install-app library_management
+2023-05-16 10:25:46,417 INFO /home/mukiala/.local/bin/bench --site library.demo list-apps
+2023-05-16 10:38:45,728 INFO /home/mukiala/.local/bin/bench set-config -g developer_mode true
+2023-05-16 10:38:56,883 INFO /home/mukiala/.local/bin/bench start
+2023-05-16 10:38:57,860 INFO /home/mukiala/.local/bin/bench serve --port 8004
+2023-05-16 10:38:57,932 INFO /home/mukiala/.local/bin/bench watch
+2023-05-16 10:38:58,012 INFO /home/mukiala/.local/bin/bench worker
+2023-05-16 10:38:58,164 INFO /home/mukiala/.local/bin/bench schedule
+2023-05-16 11:00:32,716 INFO /home/mukiala/.local/bin/bench --site library.demo mariadb
+2023-05-16 11:58:11,440 INFO /home/mukiala/.local/bin/bench --site library.demo set-config server_script_enabled true
+2023-05-16 12:00:01,360 INFO /home/mukiala/.local/bin/bench --verbose --site all backup
+2023-05-17 12:00:02,881 INFO /home/mukiala/.local/bin/bench --verbose --site all backup
+2023-05-17 18:00:02,369 INFO /home/mukiala/.local/bin/bench --verbose --site all backup
+2023-05-18 12:00:02,543 INFO /home/mukiala/.local/bin/bench --verbose --site all backup
+2023-05-19 00:00:04,865 INFO /home/mukiala/.local/bin/bench --verbose --site all backup
+2023-05-19 12:00:03,357 INFO /home/mukiala/.local/bin/bench --verbose --site all backup
+2023-05-20 00:00:04,630 INFO /home/mukiala/.local/bin/bench --verbose --site all backup
+2023-05-25 12:00:04,243 INFO /home/mukiala/.local/bin/bench --verbose --site all backup

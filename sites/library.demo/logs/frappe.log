@@ -1,0 +1,3 @@
+2023-05-16 15:11:07,064 ERROR frappe New Exception collected with id: 2023-05-16 15:11:06.596838-127.0.0.1-d79
+Site: library.demo
+Form Dict: {'doctype': 'Library Transaction', 'with_parent': '1', 'cached_timestamp': '', 'cmd': 'frappe.desk.form.load.getdoctype'}
